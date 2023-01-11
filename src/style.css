@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities; 
 
+@font-face {
+  font-family: "StolzlBook";
+  src: url("/fonts/Stolzl/stolzl_book.otf");
+}
+@font-face {
+  font-family: "StolzlRegular";
+  src: url("/fonts/Stolzl/stolzl_regular.otf");
+}
+
 :root {
   --header-height: 4rem;
   --footer-height: 4rem;
@@ -13,6 +22,8 @@ html, body, header, main, footer {
   margin:  0;
   padding: 0;
   width: 100%;
+  background-color: #1b1b1b;
+  color: white;
 }
 
 main {
