@@ -4,13 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'red': ' #f31b31',
         'blue': ' #2a72f8',
-        'purple': '#722ba1',
         'dark': '#1b1b1b',
+        'dark gray': '#292929',
+        'gray text': '#bbbbbb',
+        'blue text': '#a1c1fc',
+        'red': ' #f31b31',
       },
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
+        sans: ['Stolzl', 'sans-serif'],
       },
     },
   },
