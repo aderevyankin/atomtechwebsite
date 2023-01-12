@@ -12,7 +12,17 @@ module.exports = {
         'red': ' #f31b31',
       },
       fontFamily: {
-        sans: ['StolzlBook', 'sans-serif'],
+        sans: ['Stolzl', 'sans-serif'],
+      },
+      fontSize: {
+        xxs: ['12px', '16px'],
+        xs: ['16px', '22px'],
+        sm: ['18px', '22px'],
+        md: ['20px', '24px'],
+        base: ['26px', '31px'],
+        lg: ['30px', '56px'],
+        xl: ['50px', '60px'],
+        xxl: ['72px', '86px'],
       },
     },
   },

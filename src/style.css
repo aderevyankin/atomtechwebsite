@@ -3,12 +3,8 @@
 @tailwind utilities; 
 
 @font-face {
-  font-family: "StolzlBook";
+  font-family: "Stolzl";
   src: url("/fonts/Stolzl/stolzl_book.otf");
-}
-@font-face {
-  font-family: "StolzlRegular";
-  src: url("/fonts/Stolzl/stolzl_regular.otf");
 }
 
 :root {
