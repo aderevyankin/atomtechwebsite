@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+@font-face {
+  font-family: "Stolzl";
+  src: url("/fonts/Stolzl/stolzl_book.otf");
+}
+body{
+  @apply bg-dark text-white
+}
+.error{
+  font-size: 25vh;
+  height: 100vh;
+  background-image: url(/img/404.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  @apply text-blue flex flex-col items-center justify-around
+}
+.error figcaption{
+  @apply text-base text-gray-text text-center
+}
