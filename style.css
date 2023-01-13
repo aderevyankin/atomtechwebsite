@@ -21,7 +21,10 @@ body {
   background-size: 160vw auto;
   background-position: top 50vh center;
   @apply text-blue flex flex-col items-center
-  bg-no-repeat sm:bg-[length:70vw_auto] sm:bg-[bottom_-35vw_center] 2xl:bg-[bottom_-40vw_center]
+  bg-no-repeat 
+  md:bg-[length:100vw_auto] md:bg-[bottom_-50vw_center]
+  lg:bg-[length:70vw_auto] lg:bg-[bottom_-35vw_center]
+  2xl:bg-[bottom_-40vw_center]
 }
 .error figure h1 {
   @apply text-center text-5xl md:text-7xl
