@@ -20,13 +20,12 @@ body {
   background-image: url(/img/404.png);
   background-size: 160vw auto;
   background-position: top 50vh center;
-  @apply text-blue flex flex-col items-center bg-no-repeat sm:bg-[length:70vw_auto] sm:bg-[bottom_-35vw_center]
+  @apply text-blue flex flex-col items-center
+  bg-no-repeat sm:bg-[length:70vw_auto] sm:bg-[bottom_-35vw_center] 2xl:bg-[bottom_-40vw_center]
 }
-
 .error figure h1 {
   @apply text-center text-5xl md:text-7xl
 }
-
 .error figcaption {
   @apply text-xs text-gray-text text-center md:text-sm
 }
