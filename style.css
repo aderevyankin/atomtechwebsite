@@ -1,4 +1,5 @@
 @tailwind base;
+/*#region scrollbar customization */
 /* Firefox */
 * {
   scrollbar-width: thin;
@@ -7,7 +8,7 @@
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 *::-webkit-scrollbar-track {
@@ -20,6 +21,8 @@
   border-radius: 14px;
   border: 3px solid var(--primary);
 }
+
+/*#endregion*/
 @tailwind components;
 @tailwind utilities;
 
@@ -29,38 +32,42 @@
 }
 
 :root {
-  --background-image-width: 985px;
   --primary: #1b1b1b;
   --secondary: #292929;
 }
 
 body {
-  @apply bg-dark text-white
+  @apply bg-dark text-white 
 }
 
-header{
-  @apply sticky top-0 z-30 w-full px-2 py-4 bg-dark sm:px-4 
+header {
+  @apply sticky top-0 z-30 w-full px-2 py-4 bg-dark sm:px-4
 }
-
+.burger{
+  @apply absolute top-4 right-40 h-4
+}
+.burger img{
+  @apply hover:bg-gray-text hover:p-1 hover:rounded-3xl
+}
 /*#region error */
 .error {
   height: 100vh;
-  background-image: url(/img/404.png);
+  background-image: url(/img/form-big.svg);
   background-size: 160vw auto;
   background-position: top 50vh center;
-  @apply text-blue flex flex-col items-center
-  bg-no-repeat 
-  md:bg-[length:100vw_auto] md:bg-[bottom_-50vw_center]
-  lg:bg-[length:70vw_auto] lg:bg-[bottom_-35vw_center]
-  2xl:bg-[bottom_-40vw_center]
+  @apply text-blue flex flex-col items-center bg-no-repeat md:bg-[length:100vw_auto] md:bg-[bottom_-50vw_center] lg:bg-[length:70vw_auto] lg:bg-[bottom_-35vw_center] 2xl:bg-[bottom_-40vw_center]
 }
+
 .error figure h1 {
   @apply text-center text-5xl md:text-7xl
 }
+
 .error figcaption {
   @apply text-sm text-gray-text text-center md:text-md
 }
+
 .error figure {
   margin-top: 15vh;
 }
+
 /*#endregion*/
