@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  content: ['./*.{html,js}', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -23,8 +23,8 @@ module.exports = {
         lg: ['30px', '56px'],
         xl: ['50px', '60px'],
         xxl: ['72px', '86px'],
-        '5xl':['35vw','35vw'],
-        '7xl':['25vh','25vh']
+        '5xl': ['35vw', '35vw'],
+        '7xl': ['25vh', '25vh']
       },
     },
   },
