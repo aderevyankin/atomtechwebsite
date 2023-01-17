@@ -1,5 +1,5 @@
 @tailwind base;
-/*#region scrollbar customization */
+/*#region scrol settings */
 /* Firefox */
 * {
   scrollbar-width: thin;
@@ -21,8 +21,7 @@
   border-radius: 14px;
   border: 3px solid var(--primary);
 }
-
-/*#endregion*/
+/*#endregion */
 @tailwind components;
 @tailwind utilities;
 
@@ -49,25 +48,3 @@ header {
 .burger img{
   @apply hover:bg-gray-text hover:p-1 hover:rounded-3xl
 }
-/*#region error */
-.error {
-  height: 100vh;
-  background-image: url(/img/form-big.svg);
-  background-size: 160vw auto;
-  background-position: top 50vh center;
-  @apply text-blue flex flex-col items-center bg-no-repeat md:bg-[length:100vw_auto] md:bg-[bottom_-50vw_center] lg:bg-[length:70vw_auto] lg:bg-[bottom_-35vw_center] 2xl:bg-[bottom_-40vw_center]
-}
-
-.error figure h1 {
-  @apply text-center text-5xl md:text-7xl
-}
-
-.error figcaption {
-  @apply text-sm text-gray-text text-center md:text-md
-}
-
-.error figure {
-  margin-top: 15vh;
-}
-
-/*#endregion*/
