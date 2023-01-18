@@ -34,15 +34,19 @@ menu{
   @apply fixed top-0 z-50 right-[-30vw] w-screen md:w-[30vw] h-screen bg-blue p-5
   flex flex-col space-y-5 text-blue-text text-md duration-300
 }
+
 menu a{
   @apply hover:text-white
 }
+
 menu #close-menu{
   @apply text-right text-4xl
 }
+
 .side-menu-open{
   @apply right-0
 }
+
 .side-menu-close{
   @apply right-[-100vw] md:right-[-30vw]
 }
