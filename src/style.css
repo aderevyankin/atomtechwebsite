@@ -18,11 +18,31 @@ body {
 }
 
 header {
-  @apply sticky top-0 z-30 w-full px-2 py-4 bg-dark sm:px-4
+  @apply sticky top-0 z-30 w-full px-12 md:px-32 py-6 md:bg-dark flex justify-between
+}
+header img{
+  @apply h-5 md:h-8 
 }
 .burger{
-  @apply absolute top-4 right-40 h-4
+  @apply p-1 hover:bg-gray-text hover:bg-opacity-10 hover:rounded-3xl 
 }
 .burger img{
-  @apply hover:bg-gray-text hover:p-1 hover:rounded-3xl
+  @apply h-3 md:h-4
+}
+
+menu{
+  @apply fixed top-0 z-50 right-[-30vw] w-screen md:w-[30vw] h-screen bg-blue p-5
+  flex flex-col space-y-5 text-blue-text text-md duration-300
+}
+menu a{
+  @apply hover:text-white
+}
+menu #close-menu{
+  @apply text-right text-4xl
+}
+.side-menu-open{
+  @apply right-0
+}
+.side-menu-close{
+  @apply right-[-100vw] md:right-[-30vw]
 }
