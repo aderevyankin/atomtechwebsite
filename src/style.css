@@ -57,7 +57,7 @@ menu #close-menu{
 }
 
 .section1{
-  height: 90vh;
+  height: 100vh;
   background-image: url(/img/main-big.svg);
   background-size: 180vw;
   background-position: bottom -30vw center;
@@ -76,5 +76,11 @@ menu #close-menu{
 
 .section2{
   height: 100vh;
-  @apply px-12 md:px-28
+  @apply px-12 md:px-28 md:flex  
+}
+.section2 h4{
+  @apply text-base text-white py-8
+}
+.section2 figure{
+  @apply bg-dark-gray max-w-[80vw] md:max-w-[25vw] max-h-[30vh] rounded-xl p-7 my-16 mx-3 
 }
