@@ -38,7 +38,9 @@ menu{
 menu a{
   @apply hover:text-white
 }
-
+.data{
+  @apply flex flex-col absolute bottom-2 underline text-md-plus text-white 
+}
 menu #close-menu{
   @apply text-right text-4xl
 }
