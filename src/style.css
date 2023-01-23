@@ -31,24 +31,35 @@ header img{
 }
 
 menu{
-  @apply fixed top-0 z-50 right-[-30vw] w-screen md:w-[30vw] h-screen bg-blue p-5
+  @apply fixed top-0 z-50 right-[-100vw] w-screen md:w-[30vw] h-screen bg-blue p-5
   flex flex-col space-y-5 text-blue-text text-md duration-300
 }
-
 menu a{
   @apply hover:text-white
 }
-.data{
+.contacts{
   @apply flex flex-col absolute bottom-2 underline text-md-plus text-white 
 }
 menu #close-menu{
   @apply text-right text-4xl
 }
-
 .side-menu-open{
   @apply right-0
 }
-
 .side-menu-close{
   @apply right-[-100vw] md:right-[-30vw]
+}
+
+.section1{
+  height: 90vh;
+  background-image: url(/img/main-big.svg);
+  background-size: 80%;
+  background-position: center right -20vw;
+  @apply w-full bg-no-repeat flex flex-col justify-around px-28
+}
+.section1 h2{
+  @apply py-4 text-xl max-w-3xl
+}
+.section1 p{
+  @apply text-gray-text text-sm
 }
