@@ -23,8 +23,14 @@ header {
 header img{
   @apply h-5 md:h-8 
 }
+h2{
+  @apply text-base md:text-xl
+}
+h3{
+  @apply text-gray-text text-md
+}
 .burger{
-  @apply p-1 hover:bg-gray-text hover:bg-opacity-10 hover:rounded-3xl 
+  @apply p-1 hover:bg-gray-text hover:bg-opacity-10 hover:rounded-full
 }
 .burger img{
   @apply h-3 md:h-4
@@ -53,13 +59,22 @@ menu #close-menu{
 .section1{
   height: 90vh;
   background-image: url(/img/main-big.svg);
-  background-size: 80%;
-  background-position: center right -20vw;
-  @apply w-full bg-no-repeat flex flex-col justify-around px-28
+  background-size: 180vw;
+  background-position: bottom -30vw center;
+  @apply w-full bg-no-repeat flex flex-col md:justify-around px-12 md:px-28 
+  md:bg-[length:80%] md:bg-[center_right_-20vw]
 }
 .section1 h2{
-  @apply py-4 text-xl max-w-3xl
+  @apply max-w-3xl py-4
 }
 .section1 p{
-  @apply text-gray-text text-sm
+  @apply text-gray-text text-xs md:text-sm py-4
+}
+.section1 button{
+  @apply bg-blue rounded-full p-2 md:p-4 mt-4 md:mt-10 text-xxs md:text-sm
+}
+
+.section2{
+  height: 100vh;
+  @apply px-12 md:px-28
 }
