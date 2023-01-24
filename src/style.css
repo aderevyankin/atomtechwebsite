@@ -16,12 +16,20 @@
 body {
   @apply bg-dark text-white 
 }
-
+.hidden-logo{
+  @apply absolute md:hidden h-7 px-12 my-6
+}
 header {
-  @apply sticky top-0 z-30 w-full px-12 md:px-32 py-6 md:bg-dark flex justify-between
+  @apply sticky top-0 z-30 w-full px-12 md:px-32 py-4 md:bg-dark flex justify-end md:justify-between
+}
+header a{
+  @apply hidden md:block
 }
 header img{
-  @apply h-5 md:h-8 
+  @apply h-5 md:h-8 my-3 mx-2
+}
+h1{
+  @apply text-big md:text-xxl 
 }
 h2{
   @apply text-base md:text-xl
@@ -29,8 +37,11 @@ h2{
 h3{
   @apply text-gray-text text-md
 }
+p{
+  @apply text-xs text-gray-text
+}
 .burger{
-  @apply p-1 hover:bg-gray-text hover:bg-opacity-10 hover:rounded-full
+  @apply md:px-2 bg-dark-gray md:bg-transparent rounded-full hover:bg-gray-text hover:bg-opacity-10 
 }
 .burger img{
   @apply h-3 md:h-4
@@ -68,7 +79,7 @@ menu #close-menu{
   @apply max-w-3xl py-4
 }
 .section1 p{
-  @apply text-gray-text text-xs md:text-sm py-4
+  @apply md:text-sm py-4
 }
 .section1 button{
   @apply bg-blue rounded-full p-2 md:p-4 mt-4 md:mt-10 text-xxs md:text-sm
@@ -76,11 +87,20 @@ menu #close-menu{
 
 .section2{
   height: 100vh;
-  @apply px-12 md:px-28 md:flex  
+  @apply px-12 md:px-28
+}
+.section2 div{
+  @apply md:flex justify-around
+}
+.section2 h1{
+  @apply justify-center py-28 md:py-44
 }
 .section2 h4{
-  @apply text-base text-white py-8
+  @apply text-base text-white py-4 mt-2
+} 
+.section2 p{
+  @apply py-4
 }
 .section2 figure{
-  @apply bg-dark-gray max-w-[80vw] md:max-w-[25vw] max-h-[30vh] rounded-xl p-7 my-16 mx-3 
+  @apply bg-dark-gray rounded-xl p-7 my-16 mx-3 2xl:max-w-[30vw] 
 }
