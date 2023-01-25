@@ -132,20 +132,26 @@ menu #close-menu{
   @apply px-12 md:px-32 relative 
 }
 .block4 nav{
-  @apply absolute right-12 md:right-32 top-0 flex justify-between
+  @apply absolute right-12 md:right-32 top-0 flex justify-between cursor-pointer
 }
 .block4 nav img{
-  @apply w-14 first:mx-2
+  @apply w-14  first:mx-2 hover:bg-dark-gray p-2
+}
+.block4 .wrapper {
+  @apply relative overflow-hidden rounded-lg h-[800px] md:h-[560px] 
 }
 .block4 section{
-  @apply md:flex justify-between w-full my-5 md:my-16
+  @apply md:flex justify-between w-full my-5 md:my-16 duration-700 ease-in-out 
 }
 .block4 ul{
-  @apply my-4
+  @apply my-4 mr-4
+}
+.block4 li{
+  @apply my-3
 }
 .block4 h4{
-  @apply my-5 
+  @apply my-5 text-base
 }
 .block4 img{
-  @apply md:w-[50%] h-auto rounded-xl 
+  @apply object-cover rounded-3xl md:w-[50%] md:h-auto 
 }

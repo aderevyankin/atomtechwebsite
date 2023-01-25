@@ -1,4 +1,5 @@
 import './style.css'
+import 'flowbite';
 
 var sideMenu = document.querySelector('menu');
 
