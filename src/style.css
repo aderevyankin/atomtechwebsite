@@ -14,7 +14,7 @@
 }
 
 body {
-  @apply bg-dark text-white
+  @apply bg-dark text-white 
 }
 .hidden-logo{
   @apply absolute md:hidden h-7 px-12 my-6
@@ -40,6 +40,10 @@ h3{
 p{
   @apply text-xs text-gray-text
 }
+ul{
+ @apply list-disc text-gray-text text-xs list-inside
+}
+
 .burger{
   @apply md:px-2 bg-dark-gray md:bg-transparent rounded-full hover:bg-gray-text hover:bg-opacity-10 
 }
@@ -67,7 +71,7 @@ menu #close-menu{
   @apply right-[-100vw] md:right-[-30vw]
 }
 
-.section1{
+.block1{
   height: 100vh;
   background-image: url(/img/main-big.svg);
   background-size: 180vw;
@@ -75,52 +79,73 @@ menu #close-menu{
   @apply w-full bg-no-repeat flex flex-col md:justify-around px-12 md:px-32 
   md:bg-[length:80%] md:bg-[center_right_-20vw]
 }
-.section1 h2{
+.block1 h2{
   @apply max-w-3xl py-4
 }
-.section1 p{
+.block1 p{
   @apply md:text-sm py-4
 }
-.section1 button{
+.block1 button{
   @apply bg-blue rounded-full p-2 md:p-4 mt-4 md:mt-10 text-xxs md:text-sm
 }
 
-.section2{
+.block2{
   @apply px-12 md:px-32 h-full
 }
-.section2 div{
+.block2 div{
   @apply md:flex justify-between 
 } 
-.section2 h1{
+.block2 h1{
   @apply w-full my-[10%] 
 }
-.section2 h4{
+.block2 h4{
   @apply text-base text-white py-4 mt-2
 } 
-.section2 p{
+.block2 p{
   @apply py-4
 }
-.section2 figure{
+.block2 figure{
   @apply bg-dark-gray rounded-xl p-7 2xl:max-w-[30vw] 
   md:mx-4 first:mx-0 last:mx-0
   my-7 md:my-16
 }
 
-.section3{
-  height: 50vh;
+.block3{
   @apply px-12 md:px-32
 }
-.section3 div{
-  @apply grid grid-rows-2 md:grid-cols-2 md:gap-4
+.block3 div{
+  @apply grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 md:gap-4
 }
-.section3 h4{
+.block3 h4{
   @apply text-sm md:text-base mt-[90px] md:mt-44
 }
-.section3 p{
-  @apply text-blue-text
+.block3 p{
+  @apply text-blue-text py-4
 }
-.section3 figure{
+.block3 figure{
   background-position: top right;
-  @apply bg-blue rounded-xl p-7 my-16 bg-no-repeat
-   first:bg-[url('/img/corner-1.png')] bg-[url('/img/corner-2.png')]
+  @apply bg-blue rounded-xl p-7 my-5 md:my-16 bg-no-repeat
+  first:bg-[url('/img/corner-1.png')] bg-[url('/img/corner-2.png')]
+}
+
+.block4{
+  @apply px-12 md:px-32 relative 
+}
+.block4 nav{
+  @apply absolute right-12 md:right-32 top-0 flex justify-between
+}
+.block4 nav img{
+  @apply w-14 first:mx-2
+}
+.block4 section{
+  @apply md:flex justify-between w-full my-5 md:my-16
+}
+.block4 ul{
+  @apply my-4
+}
+.block4 h4{
+  @apply my-5 
+}
+.block4 img{
+  @apply md:w-[50%] h-auto rounded-xl 
 }
