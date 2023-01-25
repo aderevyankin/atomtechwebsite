@@ -120,8 +120,7 @@ menu #close-menu{
   @apply text-blue-text
 }
 .section3 figure{
-  background-position: bottom right;
+  background-position: top right;
   @apply bg-blue rounded-xl p-7 my-16 bg-no-repeat
-   bg-[url('/img/form.png')]
-   bg-[length:100%]
+   first:bg-[url('/img/corner-1.png')] bg-[url('/img/corner-2.png')]
 }
