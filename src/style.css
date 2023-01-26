@@ -143,7 +143,6 @@ menu #close-menu{
 .block4 section{
   @apply md:flex justify-between w-full my-5 md:my-16 duration-700 ease-in-out 
 }
-
 .block4 ul{
   @apply my-4 mr-4
 }
@@ -156,3 +155,16 @@ menu #close-menu{
 .block4 img{
   @apply object-cover rounded-3xl md:w-[50%] md:h-auto 
 }
+.block4 .slider-control{
+  @apply w-2 h-2 rounded-full 
+}
+
+.block5{
+  @apply px-12 md:px-32 relative py-7
+}
+.block5 div{
+  @apply md:flex justify-around h-9 my-5
+}
+.block5 img{
+  @apply h-20 p-4 opacity-30 grayscale hover:opacity-100 hover:grayscale-0 hover:bg-dark-gray rounded-xl
+} 
