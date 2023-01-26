@@ -135,7 +135,7 @@ menu #close-menu{
   @apply absolute right-12 md:right-32 top-0 flex justify-between cursor-pointer
 }
 .block4 nav img{
-  @apply w-14  first:mx-2 hover:bg-dark-gray p-2
+  @apply w-14 first:mx-2 hover:bg-dark-gray p-2
 }
 .block4 .wrapper {
   @apply relative overflow-hidden rounded-lg h-[800px] md:h-[560px] 
@@ -143,6 +143,7 @@ menu #close-menu{
 .block4 section{
   @apply md:flex justify-between w-full my-5 md:my-16 duration-700 ease-in-out 
 }
+
 .block4 ul{
   @apply my-4 mr-4
 }
