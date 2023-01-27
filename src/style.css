@@ -163,8 +163,28 @@ menu #close-menu{
   @apply px-12 md:px-32 relative py-7
 }
 .block5 div{
-  @apply md:flex justify-around h-9 my-5
+  @apply grid grid-rows-2 grid-cols-3  gap-y-40  md:flex md:justify-around h-9 my-36
 }
 .block5 img{
-  @apply h-20 p-4 opacity-30 grayscale hover:opacity-100 hover:grayscale-0 hover:bg-dark-gray rounded-xl
+  @apply h-20 p-4 opacity-75 grayscale hover:opacity-100 hover:grayscale-0 hover:bg-dark-gray rounded-xl 
 } 
+.popower-wrapper{
+  @apply absolute z-10 block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 
+}
+.popower-head{
+  @apply px-4
+}
+
+.block6{
+  height: 100vh;
+  @apply relative px-12 md:px-32
+}
+.block6 img {
+  @apply md:h-[120%] z-10 object-scale-down object-center absolute -left-1/4
+}
+.block6 figure{
+  @apply bg-blue h-5/6  inset-x-0 bottom-0 absolute -z-10
+}
+.block6 h2{
+  @apply absolute z-20 top-1/4 right-0 px-56 
+}
