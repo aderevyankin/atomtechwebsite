@@ -14,8 +14,6 @@ document.getElementById('close-menu').addEventListener('click', function () {
 })
 
 var nextButton = document.getElementById("next-button");
-setTimeout(() => {nextButton.click();}, 1000)
-setTimeout(() => {nextButton.click();}, 1000)
-setTimeout(() => {nextButton.click();}, 1000)
-setTimeout(() => {nextButton.click();}, 1000)
-setTimeout(() => {nextButton.click();}, 1000)
+for (let i = 0; i < 5; i++) {
+    setTimeout(() => {nextButton.click();}, 1000)
+}

@@ -160,13 +160,13 @@ menu #close-menu{
 }
 
 .block5{
-  @apply px-12 md:px-32 relative py-7
+  @apply px-12 md:px-32 relative py-7 mb-20 
 }
 .block5 div{
-  @apply grid grid-rows-2 grid-cols-3  gap-y-40  md:flex md:justify-around h-9 my-36
+  @apply grid grid-rows-2 grid-cols-3  gap-y-40  md:flex md:justify-around h-9 my-36 
 }
 .block5 img{
-  @apply h-20 p-4  hover:bg-dark-gray rounded-xl
+  @apply h-20 p-4 hover:bg-dark-gray rounded-xl
   /* opacity-50 hover:opacity-100  */
    /* grayscale hover:grayscale-0 */
 } 
@@ -201,3 +201,4 @@ menu #close-menu{
 .block6 figure{
   @apply bg-blue h-screen inset-x-0 bottom-0 absolute -z-10
 }
+
