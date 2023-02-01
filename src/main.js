@@ -16,23 +16,23 @@ document.getElementById('close-menu').addEventListener('click', function () {
 let slideIndex = 1;
 showSlides(slideIndex);
 
-document.getElementById("next-button").addEventListener('click',function nextSlide() {
+document.getElementById("next-button").addEventListener('click', function nextSlide() {
     showSlides(slideIndex += 1);
-})
+});
 
 document.getElementById("prev-button").addEventListener('click', function previousSlide() {
     showSlides(slideIndex -= 1);
-})
+});
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+// addEventListener("resize", function currentSlide(n) {
+//     showSlides(slideIndex = n);
+// });
+
 
 function showSlides(n) {
     let slides = document.getElementsByClassName("section");
-    console.log(slides);
     if (n > slides.length) {
-      slideIndex = 1
+        slideIndex = 1
     }
     if (n < 1) {
         slideIndex = slides.length
@@ -40,5 +40,6 @@ function showSlides(n) {
     for (let slide of slides) {
         slide.style.display = "none";
     }
-    slides[slideIndex - 1].style.display = "flex";
+    console.log(window.innerWidth);
+    slides[slideIndex - 1].style.display = window.innerWidth >= 768 ? "flex" : "block";
 }

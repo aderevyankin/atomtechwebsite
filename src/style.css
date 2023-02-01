@@ -166,12 +166,13 @@ menu #close-menu{
   @apply grid grid-rows-2 grid-cols-3  gap-y-40  md:flex md:justify-around h-9 my-36 
 }
 .block5 img{
-  @apply h-20 p-4 rounded-xl hover:bg-dark-gray 
+  @apply h-20 p-4 rounded-xl hover:h-24 duration-500
+  /* */
   /* opacity-50 hover:opacity-100  */
   /* grayscale hover:grayscale-0 */
 } 
 .popower-wrapper{
-  @apply absolute z-10 block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 
+  @apply absolute z-10 md:block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 
 }
 .popower-head{
   @apply px-4
@@ -184,10 +185,11 @@ menu #close-menu{
 .block6 input{
   outline: 0;
   border-width: 0 0 2px;
-  @apply my-10 z-10 bg-transparent border-white text-white placeholder:text-white text-base block focus:border-white 
+
+  @apply my-10  bg-transparent border-white text-white placeholder:text-white text-base block focus:border-white focus:outline-0
 }
 .block6 form{
-  @apply absolute top-[20%] right-0 px-56 z-10
+  @apply absolute top-[20%] md:right-0 md:px-56 z-10
 }
 .block6 .form-wrapper button{
   @apply text-xs md:text-sm text-blue bg-white py-4 px-6 rounded-full
