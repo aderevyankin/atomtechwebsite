@@ -40,6 +40,5 @@ function showSlides(n) {
     for (let slide of slides) {
         slide.style.display = "none";
     }
-    console.log(window.innerWidth);
     slides[slideIndex - 1].style.display = window.innerWidth >= 768 ? "flex" : "block";
 }
