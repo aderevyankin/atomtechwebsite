@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "postinstall": "pip install -r required.txt",
-    "deploy": "npm run build && aws --endpoint-url=https://storage.yandexcloud.net s3 rm s3://atomtemplate/assets/ --recursive && aws --endpoint-url=https://storage.yandexcloud.net s3 cp --recursive dist/ s3://atomtemplate/"
+    "deploy": "npm run build && aws --endpoint-url=https://storage.yandexcloud.net s3 rm s3://atomtech.dev/assets/ --recursive && aws --endpoint-url=https://storage.yandexcloud.net s3 cp --recursive dist/ s3://atomtech.dev/"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
