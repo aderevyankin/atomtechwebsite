@@ -167,9 +167,6 @@ menu #close-menu{
 }
 .block5 img{
   @apply h-20 p-4 rounded-xl hover:h-24 duration-500
-  /* */
-  /* opacity-50 hover:opacity-100  */
-  /* grayscale hover:grayscale-0 */
 } 
 .popower-wrapper{
   @apply absolute z-10 md:block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 
