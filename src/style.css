@@ -205,17 +205,17 @@ menu #close-menu{
 }
 
 footer{
-  @apply h-screen md:h-[50vh] flex justify-between
+  @apply h-screen md:h-[50vh] md:flex justify-between
 }
 footer .contacts{
-  @apply px-32 py-52 flex flex-col underline text-md-plus text-blue
+  @apply px-32 py-20 md:py-52 flex flex-col underline text-md-plus text-blue
 }
 footer .contacts a{
   @apply my-2
 }
 footer nav{
-  @apply flex flex-col px-32 py-52 text-md-plus my-3
+  @apply flex flex-col px-32 py-20 md:py-52 text-md-plus my-3
 }
 footer img{
-  @apply absolute h-8 mx-32 mt-32
+  @apply hidden md:block absolute h-8 mx-32 mt-32
 }
