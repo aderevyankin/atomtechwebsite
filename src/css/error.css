@@ -4,7 +4,7 @@
 /*#region error */
 .error {
     height: 100vh;
-    background-image: url(/img/form-big.svg);
+    background-image: url(/img/form-big.svg),url(/img/form.png);
     background-size: 160vw auto;
     background-position: top 50vh center;
     @apply text-blue flex flex-col items-center bg-no-repeat 

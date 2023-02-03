@@ -73,7 +73,7 @@ menu #close-menu{
 
 .block1{
   height: 100vh;
-  background-image: url(/img/main-big.svg);
+  background-image: url(/img/main.png);
   background-size: 180vw;
   background-position: bottom -30vw center;
   @apply w-full bg-no-repeat flex flex-col md:justify-around px-12 md:px-32 

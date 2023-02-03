@@ -1,6 +1,11 @@
 import 'flowbite';
 import './style.css'
 
+document.getElementById('img_highQuality').addEventListener('load', function (event) {
+    var target = document.getElementById("bgblock");
+    target.style.backgroundImage = "url(" + event.target.src + ")";
+});
+
 var sideMenu = document.querySelector('menu');
 
 document.getElementById('open-menu').addEventListener('click', function () {
@@ -40,6 +45,5 @@ function showSlides(n) {
     for (let slide of slides) {
         slide.style.display = "none";
     }
-    console.log(window.innerWidth);
     slides[slideIndex - 1].style.display = window.innerWidth >= 768 ? "flex" : "block";
 }
