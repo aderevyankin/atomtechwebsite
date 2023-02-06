@@ -1,4 +1,7 @@
 import 'flowbite';
+import { Modal } from 'flowbite';
+
+import axios from 'axios';
 import './style.css'
 
 document.getElementById('img_highQuality').addEventListener('load', function (event) {
@@ -47,3 +50,38 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = window.innerWidth >= 768 ? "flex" : "block";
 }
+
+const TOKEN = '6146946272:AAE_G6ZTOdotE58kaP6MBZ9GtBf1_w_6BUg';
+const CHAT_ID = '-1001853372997';
+const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+const $targetEl = document.getElementById('result-modal');
+const modal = new Modal($targetEl);
+const modаlText = document.getElementById('result-text');
+let resultMessage = '';
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault(); //сбросил стандартное поведение
+    let msg = `<b>Заявка с сайта</b>\n`;
+    msg += `<b>Имя:</b> ${this.name.value}\n`;
+    msg += `<b>Компания:</b> ${this.company.value}\n`;
+    msg += `<b>Почта:</b> ${this.email.value}\n`;
+    msg += `<b>Телефонный номер:</b> ${this.phonenum.value}\n`;
+
+    axios.post(URI_API, {
+        chat_id: CHAT_ID,
+        parse_mode: 'html',
+        text: msg
+    }).then((res) => {
+        this.name.value = '';
+        this.company.value = '';
+        this.email.value = '';
+        this.phonenum.value = '';
+        resultMessage = 'Заявка отправлена. В ближайшее время менеджер с вами свяжется';
+    }).catch((err) => {
+        console.log(err);
+        resultMessage = 'Не удалось отправить заявку. Попробуйте позже.'
+    }).finally(() => {
+        modаlText.innerHTML = resultMessage;
+        modal.show();
+    })
+})

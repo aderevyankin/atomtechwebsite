@@ -260,20 +260,27 @@
   <div class="block6" id="contact-us">
     <figure></figure>
     <img src="/img/form-big.svg" alt="donuts">
-    <form>
+    <form id="contact-form">
       <h2>
         Оставьте заявку,<br>и мы с вами свяжемся
       </h2>
       <div class="form-wrapper">
-        <input type="text" placeholder="Имя*" required>
-        <input type="text" placeholder="Компания">
-        <input type="email" placeholder="e-mail*" required>
-        <input type="tel" placeholder="+7 999 999-99-99" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
+        <input type="text" name="name" placeholder="Имя*" required>
+        <input type="text" name="company" placeholder="Компания">
+        <input type="email" name="email" placeholder="e-mail*" required>
+        <input type="tel" name="phonenum" placeholder="+7 999 999-99-99" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
         <button type="submit">Отправить</button>
         <p>Отправляя заявку, вы даете согласие согласие <br> на <a href="">обработку персональных данных</a>
         </p>
       </div>
     </form>
+  </div>
+  <div id="result-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+    <div class="relative w-full h-full max-w-2xl md:h-auto">
+      <div class="relative bg-black rounded-lg shadow py-16 px-20">
+        <p class="text-base leading-relaxed text-white" id="result-text"></p>
+      </div>
+    </div>
   </div>
   <footer>
     <img src="img/circuit-logo.svg" />
