@@ -1,7 +1,7 @@
 import 'flowbite';
 import { Modal } from 'flowbite';
 import './style.css';
-
+import './counter.js'
 const URI_API = `https://functions.yandexcloud.net/d4etsced6ta9eilot2po`;
 
 
@@ -32,11 +32,6 @@ document.getElementById("next-button").addEventListener('click', function nextSl
 document.getElementById("prev-button").addEventListener('click', function previousSlide() {
     showSlides(slideIndex -= 1);
 });
-
-// addEventListener("resize", function currentSlide(n) {
-//     showSlides(slideIndex = n);
-// });
-
 
 function showSlides(n) {
     let slides = document.getElementsByClassName("section");
