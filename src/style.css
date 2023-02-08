@@ -1,4 +1,4 @@
-@import './css/scroll.css';
+@import "./css/scroll.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,205 +14,207 @@
 }
 
 body {
-  @apply bg-dark text-white 
+  @apply bg-dark text-white;
 }
-.hidden-logo{
-  @apply absolute md:hidden h-7 px-12 my-6
+.hidden-logo {
+  @apply absolute my-6 h-7 px-12 md:hidden;
 }
 header {
-  @apply sticky top-0 z-30 w-full px-12 md:px-32 py-4 md:bg-dark flex justify-end md:justify-between
+  @apply sticky top-0 z-30 flex w-full justify-end px-12 py-4 md:justify-between md:bg-dark md:px-32;
 }
-header a{
-  @apply hidden md:block
+header a {
+  @apply hidden md:block;
 }
-header img{
-  @apply h-5 md:h-8 my-3 mx-2
+header img {
+  @apply my-3 mx-2 h-5 md:h-8;
 }
-h1{
-  @apply text-big md:text-xxl 
+h1 {
+  @apply text-big md:text-xxl;
 }
-h2{
-  @apply text-base md:text-xl
+h2 {
+  @apply text-base md:text-xl;
 }
-h3{
-  @apply text-gray-text text-md
+h3 {
+  @apply text-md text-gray-text;
 }
-p{
-  @apply text-xs text-gray-text
+p {
+  @apply text-xs text-gray-text;
 }
-ul{
- @apply list-disc text-gray-text text-xs list-inside
-}
-
-.burger{
-  @apply md:px-2 bg-dark-gray md:bg-transparent rounded-full hover:bg-gray-text hover:bg-opacity-10 
-}
-.burger img{
-  @apply h-3 md:h-4
+ul {
+  @apply list-inside list-disc text-xs text-gray-text;
 }
 
-menu{
-  @apply fixed top-0 z-50 right-[-100vw] w-screen md:w-[30vw] h-screen bg-blue p-5
-  flex flex-col space-y-5 text-blue-text text-md duration-300
+.burger {
+  @apply rounded-full bg-dark-gray hover:bg-gray-text hover:bg-opacity-10 md:bg-transparent md:px-2;
 }
-menu a{
-  @apply hover:text-white
-}
-menu .contacts{
-  @apply absolute flex flex-col  bottom-2 underline text-md-plus text-white 
-}
-menu #close-menu{
-  @apply text-right text-4xl
-}
-.side-menu-open{
-  @apply right-0
-}
-.side-menu-close{
-  @apply right-[-100vw] md:right-[-30vw]
+.burger img {
+  @apply h-3 md:h-4;
 }
 
-.block1{
+menu {
+  @apply fixed top-0 right-[-100vw] z-50 flex h-screen w-screen flex-col space-y-5
+  bg-blue p-5 text-md text-blue-text duration-300 md:w-[30vw];
+}
+menu a {
+  @apply hover:text-white;
+}
+menu .contacts {
+  @apply absolute bottom-2 flex  flex-col text-md-plus text-white underline;
+}
+menu #close-menu {
+  @apply text-right text-4xl;
+}
+.side-menu-open {
+  @apply right-0;
+}
+.side-menu-close {
+  @apply right-[-100vw] md:right-[-30vw];
+}
+
+.block1 {
   height: 100vh;
   background-image: url(/img/main.png);
   background-size: 180vw;
   background-position: bottom -30vw center;
-  @apply w-full bg-no-repeat flex flex-col md:justify-around px-12 md:px-32 
-  md:bg-[length:80%] md:bg-[center_right_-20vw]
+  @apply flex w-full flex-col bg-no-repeat px-12 md:justify-around md:bg-[length:80%] 
+  md:bg-[center_right_-20vw] md:px-32;
 }
-.block1 h2{
-  @apply max-w-3xl py-4
+.block1 h2 {
+  @apply max-w-3xl py-4;
 }
-.block1 p{
-  @apply md:text-sm py-4
+.block1 p {
+  @apply py-4 md:text-sm;
 }
-.block1 button{
-  @apply bg-blue rounded-full p-2 md:p-4 mt-4 md:mt-10 text-xxs md:text-sm
-}
-
-.block2{
-  @apply px-12 md:px-32 h-full
-}
-.block2 div{
-  @apply md:flex justify-between 
-} 
-.block2 h1{
-  @apply w-full my-[10%] 
-}
-.block2 h4{
-  @apply text-base text-white py-4 mt-2
-} 
-.block2 p{
-  @apply py-4
-}
-.block2 figure{
-  @apply bg-dark-gray rounded-xl p-7 2xl:max-w-[30vw] 
-  md:mx-4 first:mx-0 last:mx-0
-  my-7 md:my-16
+.block1 button {
+  @apply mt-4 rounded-full bg-blue py-2 px-8 text-xxs
+   hover:bg-white hover:text-blue 
+   md:mt-10 md:py-4 md:px-10 md:text-sm;
 }
 
-.block3{
-  @apply px-12 md:px-32
+.block2 {
+  @apply h-full px-12 md:px-32;
 }
-.block3 div{
-  @apply grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 md:gap-4
+.block2 div {
+  @apply justify-between md:flex;
 }
-.block3 h4{
-  @apply text-sm md:text-base mt-[90px] md:mt-44
+.block2 h1 {
+  @apply my-[10%] w-full;
 }
-.block3 p{
-  @apply text-blue-text py-4
+.block2 h4 {
+  @apply mt-2 py-4 text-base text-white;
 }
-.block3 figure{
+.block2 p {
+  @apply py-4;
+}
+.block2 figure {
+  @apply my-7 rounded-xl bg-dark-gray p-7 
+  first:mx-0 last:mx-0 md:mx-4
+  md:my-16 2xl:max-w-[30vw];
+}
+
+.block3 {
+  @apply px-12 md:px-32;
+}
+.block3 div {
+  @apply grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 md:gap-4;
+}
+.block3 h4 {
+  @apply mt-[90px] text-sm md:mt-44 md:text-base;
+}
+.block3 p {
+  @apply py-4 text-blue-text;
+}
+.block3 figure {
   background-position: top right;
-  @apply bg-blue rounded-xl p-7 my-5 md:my-16 bg-no-repeat
-  first:bg-[url('/img/corner-1.png')] bg-[url('/img/corner-2.png')]
+  @apply my-5 rounded-xl bg-blue bg-[url('/img/corner-2.png')] bg-no-repeat p-7
+  first:bg-[url('/img/corner-1.png')] md:my-16;
 }
 
-.block4{
-  @apply px-12 md:px-32 relative 
+.block4 {
+  @apply relative px-12 md:px-32;
 }
-.block4 nav{
-  @apply absolute right-12 md:right-32 top-0 flex justify-between cursor-pointer
+.block4 nav {
+  @apply absolute right-12 top-0 flex cursor-pointer justify-between md:right-32;
 }
-.block4 nav img{
-  @apply w-14 first:mx-2 hover:bg-dark-gray p-2
+.block4 nav img {
+  @apply w-14 p-2 first:mx-2 hover:bg-dark-gray;
 }
 .block4 .wrapper {
-  @apply relative overflow-hidden rounded-lg h-[800px] md:h-[560px] 
+  @apply relative h-[800px] overflow-hidden rounded-lg md:h-[560px];
 }
-.block4 section{
-  @apply md:flex justify-between w-full my-5 md:my-16 duration-700 ease-in-out 
+.block4 section {
+  @apply my-5 w-full justify-between duration-700 ease-in-out md:my-16 md:flex;
 }
-.block4 ul{
-  @apply my-4 mr-4
+.block4 ul {
+  @apply my-4 mr-4;
 }
-.block4 li{
-  @apply my-3
+.block4 li {
+  @apply my-3;
 }
-.block4 h4{
-  @apply my-5 text-base
+.block4 h4 {
+  @apply my-5 text-base;
 }
-.block4 img{
-  @apply object-cover rounded-3xl md:w-[50%] md:h-auto 
+.block4 img {
+  @apply rounded-3xl object-cover md:h-auto md:w-[50%];
 }
-.block4 .slider-control{
-  @apply w-2 h-2 rounded-full 
-}
-
-.block5{
-  @apply px-12 md:px-32 relative py-7 mb-20 
-}
-.block5 div{
-  @apply grid grid-rows-2 grid-cols-3  gap-y-40  md:flex md:justify-around h-9 my-36 
-}
-.block5 img{
-  @apply h-20 p-4 rounded-xl hover:h-24 duration-500
-} 
-.popower-wrapper{
-  @apply absolute z-10 md:block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 
-}
-.popower-head{
-  @apply px-4
+.block4 .slider-control {
+  @apply h-2 w-2 rounded-full;
 }
 
-.block6{
+.block5 {
+  @apply relative mb-20 px-12 py-7 md:px-32;
+}
+.block5 div {
+  @apply my-36 grid h-9  grid-cols-3  grid-rows-2 gap-y-40 md:flex md:justify-around;
+}
+.block5 img {
+  @apply h-20 rounded-xl p-4 duration-500 hover:h-24;
+}
+.popower-wrapper {
+  @apply absolute z-10 w-64 rounded-lg border border-gray-200 bg-white text-sm font-light text-gray-500 opacity-0 shadow-sm transition-opacity duration-300 md:block;
+}
+.popower-head {
+  @apply px-4;
+}
+
+.block6 {
   height: 100vh;
-  @apply relative px-12 md:px-32
+  @apply relative px-12 md:px-32;
 }
-.block6 input{
+.block6 input {
   outline: 0;
   border-width: 0 0 2px;
 
-  @apply my-10  bg-transparent border-white text-white placeholder:text-white text-base block focus:border-white focus:outline-0
+  @apply my-10  block border-white bg-transparent text-base text-white placeholder:text-white focus:border-white focus:outline-0;
 }
-.block6 form{
-  @apply absolute top-[20%] md:right-0 md:px-56 z-10
+.block6 form {
+  @apply absolute top-[20%] z-10 md:right-0 md:px-56;
 }
-.block6 .form-wrapper button{
-  @apply text-xs md:text-sm text-blue bg-white py-4 px-6 rounded-full
+.block6 .form-wrapper button {
+  @apply rounded-full bg-white py-4 px-6 text-xs text-blue md:text-sm;
 }
-.block6 .form-wrapper p{
-  @apply my-4 text-blue-text
+.block6 .form-wrapper p {
+  @apply my-4 text-blue-text;
 }
 .block6 img {
-  @apply hidden md:block md:h-[120%] object-scale-down object-center absolute -left-1/4 -top-[10%]
+  @apply absolute -left-1/4 -top-[10%] hidden object-scale-down object-center md:block md:h-[120%];
 }
-.block6 figure{
-  @apply bg-blue h-screen inset-x-0 bottom-0 absolute -z-10
+.block6 figure {
+  @apply absolute inset-x-0 bottom-0 -z-10 h-screen bg-blue;
 }
 
-footer{
-  @apply h-screen md:h-[50vh] md:flex justify-between
+footer {
+  @apply h-screen justify-between md:flex md:h-[50vh];
 }
-footer .contacts{
-  @apply px-32 py-20 md:py-52 flex flex-col underline text-md-plus text-blue
+footer .contacts {
+  @apply flex flex-col px-32 py-20 text-md-plus text-blue underline md:py-52;
 }
-footer .contacts a{
-  @apply my-2
+footer .contacts a {
+  @apply my-2;
 }
-footer nav{
-  @apply flex flex-col px-32 py-20 md:py-52 text-md-plus my-3
+footer nav {
+  @apply my-3 flex flex-col px-32 py-20 text-md-plus md:py-52;
 }
-footer img{
-  @apply hidden md:block absolute h-8 mx-32 mt-32
+footer img {
+  @apply absolute mx-32 mt-32 hidden h-8 md:block;
 }
