@@ -40,8 +40,9 @@ h3 {
 p {
   @apply text-xs text-gray-text;
 }
+
 ul {
-  @apply list-inside list-disc text-xs text-gray-text;
+  @apply list-outside list-none text-xs text-gray-text;
 }
 
 .burger {
@@ -184,8 +185,7 @@ menu #close-menu {
 .block6 input {
   outline: 0;
   border-width: 0 0 2px;
-
-  @apply my-10  block border-white bg-transparent text-base text-white placeholder:text-white focus:border-white focus:outline-0;
+  @apply my-10  block border-white bg-transparent text-base text-white placeholder:text-blue-text focus:border-white focus:outline-0;
 }
 .block6 form {
   @apply absolute top-[20%] z-10 md:right-0 md:px-56;
@@ -215,8 +215,8 @@ footer .contacts a {
 footer nav {
   @apply my-3 flex flex-col px-32 py-20 text-md-plus md:py-52;
 }
-footer nav a{
-  @apply mb-2
+footer nav a {
+  @apply mb-2;
 }
 footer .footer-logo {
   @apply absolute mx-32 mt-32 hidden h-8 md:block;
