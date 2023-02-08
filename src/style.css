@@ -59,7 +59,7 @@ menu a {
   @apply hover:text-white;
 }
 menu .contacts {
-  @apply absolute bottom-2 flex  flex-col text-md-plus text-white underline;
+  @apply absolute bottom-2 flex flex-col text-md-plus text-white underline;
 }
 menu #close-menu {
   @apply text-right text-4xl;
@@ -104,7 +104,7 @@ menu #close-menu {
   @apply mt-2 py-4 text-base text-white;
 }
 .block2 p {
-  @apply py-4;
+  @apply py-4 md:pr-6;
 }
 .block2 figure {
   @apply my-7 rounded-xl bg-dark-gray p-7 
@@ -210,11 +210,14 @@ footer .contacts {
   @apply flex flex-col px-32 py-20 text-md-plus text-blue underline md:py-52;
 }
 footer .contacts a {
-  @apply my-2;
+  @apply mb-4;
 }
 footer nav {
   @apply my-3 flex flex-col px-32 py-20 text-md-plus md:py-52;
 }
-footer img {
+footer nav a{
+  @apply mb-2
+}
+footer .footer-logo {
   @apply absolute mx-32 mt-32 hidden h-8 md:block;
 }
