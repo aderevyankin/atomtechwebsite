@@ -185,10 +185,11 @@ menu #close-menu {
 .block6 input {
   outline: 0;
   border-width: 0 0 2px;
-  @apply my-10  block border-white bg-transparent text-base text-white placeholder:text-blue-text focus:border-white focus:outline-0;
+  @apply my-10 block w-10/12 border-white bg-transparent text-base text-white
+   placeholder:text-blue-text focus:border-white focus:outline-0;
 }
 .block6 form {
-  @apply absolute top-[20%] z-10 md:right-0 md:px-56;
+  @apply absolute top-[20%] z-10 md:right-52;
 }
 .block6 .form-wrapper button {
   @apply rounded-full bg-white py-4 px-6 text-xs text-blue md:text-sm;
