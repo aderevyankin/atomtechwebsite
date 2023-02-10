@@ -52,7 +52,9 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display =
         window.innerWidth >= 768 ? "flex" : "block";
 }
-
+/**
+ * спиннер у кнопки Отправить
+ */
 const buttonLoading = document.getElementById('form-button-loading');
 buttonLoading.style.display = 'none';
 
