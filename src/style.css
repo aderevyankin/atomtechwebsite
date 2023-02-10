@@ -99,7 +99,7 @@ menu #close-menu {
   @apply justify-between md:flex;
 }
 .block2 h1 {
-  @apply my-[10%] w-full;
+  @apply my-28 w-full;
 }
 .block2 h4 {
   @apply mt-2 py-4 text-base text-white;
@@ -166,7 +166,7 @@ menu #close-menu {
   @apply relative mb-20 px-12 py-7 md:px-32;
 }
 .block5 div {
-  @apply my-36 grid h-9  grid-cols-3  grid-rows-2 gap-y-40 md:flex md:justify-around;
+  @apply my-36 grid h-9  grid-cols-4  grid-rows-2 gap-y-40 md:flex md:justify-around;
 }
 .block5 img {
   @apply h-20 rounded-xl p-4 duration-500 hover:h-24;
@@ -192,7 +192,7 @@ menu #close-menu {
   @apply absolute top-[20%] z-10 md:right-52;
 }
 .block6 .form-wrapper button {
-  @apply rounded-full bg-white py-4 px-6 text-xs text-blue md:text-sm;
+  @apply rounded-full bg-white py-4 px-6 text-xs text-blue md:text-sm inline-flex;
 }
 .block6 .form-wrapper p {
   @apply my-4 text-blue-text;
