@@ -102,7 +102,7 @@ menu #close-menu {
   @apply my-28 w-full;
 }
 .block2 h4 {
-  @apply mt-2 py-4 text-base text-white;
+  @apply mt-2 py-4 text-sm text-white md:text-base;
 }
 .block2 p {
   @apply py-4 md:pr-6;
