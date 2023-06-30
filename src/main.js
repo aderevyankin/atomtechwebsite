@@ -23,6 +23,12 @@ document.getElementById("close-menu").addEventListener("click", function () {
     sideMenu.classList.remove("side-menu-open");
 });
 
+sideMenu.childNodes.forEach(e => {
+    e.onclick = function () {
+        sideMenu.classList.add("side-menu-close");
+    }
+});
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -63,35 +69,35 @@ const modal = new Modal($targetEl);
 const modаlText = document.getElementById("result-text");
 let resultMessage = "";
 document.getElementById("contact-form").addEventListener("submit", function (e) {
-        e.preventDefault(); //сбросил стандартное поведение
-        buttonLoading.style.display = 'block';
-        let msg = `<b>Заявка с сайта</b>\n`;
-        msg += `<b>Имя:</b> ${this.name.value}\n`;
-        msg += `<b>Компания:</b> ${this.company.value}\n`;
-        msg += `<b>Почта:</b> ${this.email.value}\n`;
-        msg += `<b>Телефонный номер:</b> ${this.phonenum.value}\n`;
+    e.preventDefault(); //сбросил стандартное поведение
+    buttonLoading.style.display = 'block';
+    let msg = `<b>Заявка с сайта</b>\n`;
+    msg += `<b>Имя:</b> ${this.name.value}\n`;
+    msg += `<b>Компания:</b> ${this.company.value}\n`;
+    msg += `<b>Почта:</b> ${this.email.value}\n`;
+    msg += `<b>Телефонный номер:</b> ${this.phonenum.value}\n`;
 
-        msg = encodeURIComponent(msg);
-        fetch(`${URI_API}?text=${msg}`)
-            .then((res) => {
-                if (!res.ok) throw "сетевая ошибка";
-                this.name.value = "";
-                this.company.value = "";
-                this.email.value = "";
-                this.phonenum.value = "";
-                resultMessage =
-                    "Заявка отправлена. В ближайшее время менеджер с вами свяжется";
-            })
-            .catch((err) => {
-                console.log(err);
-                resultMessage = "Не удалось отправить заявку. Попробуйте позже.";
-            })
-            .finally(() => {
-                modаlText.innerHTML = resultMessage;
-                modal.show();
-                setTimeout(() => {
-                    modal.hide();
-                    buttonLoading.style.display = 'none';
-                }, 3500);
-            });
-    });
+    msg = encodeURIComponent(msg);
+    fetch(`${URI_API}?text=${msg}`)
+        .then((res) => {
+            if (!res.ok) throw "сетевая ошибка";
+            this.name.value = "";
+            this.company.value = "";
+            this.email.value = "";
+            this.phonenum.value = "";
+            resultMessage =
+                "Заявка отправлена. В ближайшее время менеджер с вами свяжется";
+        })
+        .catch((err) => {
+            console.log(err);
+            resultMessage = "Не удалось отправить заявку. Попробуйте позже.";
+        })
+        .finally(() => {
+            modаlText.innerHTML = resultMessage;
+            modal.show();
+            setTimeout(() => {
+                modal.hide();
+                buttonLoading.style.display = 'none';
+            }, 3500);
+        });
+});

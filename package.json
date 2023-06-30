@@ -8,7 +8,6 @@
     "build": "vite build",
     "preview": "vite preview",
     "windeploy": "@powershell .\\venv\\Scripts\\Activate.ps1; npm run deploy",
-    "postinstall": "pip install -r required.txt",
     "deploy": "npm run build && aws --endpoint-url=https://storage.yandexcloud.net s3 rm s3://atomtech.dev/assets/ --recursive && aws --endpoint-url=https://storage.yandexcloud.net s3 cp --recursive dist/ s3://atomtech.dev/"
   },
   "devDependencies": {
